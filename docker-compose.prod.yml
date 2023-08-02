@@ -23,7 +23,7 @@ nginx:
   image: jonasal/nginx-certbot
   restart: always
   environment:
-    - CERTBOT_EMAIL=name@gmail.com
+    - CERTBOT_EMAIL=aparnar@udel.edu
   ports:
     - 80:80
     - 443:443
