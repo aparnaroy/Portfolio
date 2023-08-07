@@ -7,18 +7,6 @@ from io import StringIO
 os.environ[ 'TESTING' ] = 'true'
 from app import app
 
-#function is used to record the templates that get rendered and their context during the execution of a block of code
-@contextmanager
-def captured_templates(app):
-    recorded = []
-    def record(sender, template, context, **extra):
-        recorded.append((template, context))
-    template_rendered.connect(record, app)
-    try:
-        yield recorded
-    finally:
-        template_rendered.disconnect(record, app)
-
 
 class AppTestCase(unittest. TestCase):
     def setUp(self):
@@ -30,21 +18,6 @@ class AppTestCase(unittest. TestCase):
         html = response.get_data(as_text=True)
         assert "<h1 class=\"sub-title\">About Me</h1>" in html
 
-    
-    '''def test_home_rendered(self):
-        with captured_templates(app) as templates:
-            response = self.client.get("/")
-            assert response.status_code == 200
-            template, context = templates[0]
-
-            # Check that the correct template was used
-            assert template.name == "index.html" 
-
-            # You can also check the context data passed to the template
-            assert "location" in context 
-            assert context["title"] == "MLH Fellow"  '''
-        
-
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
         assert response.status_code == 200
@@ -52,7 +25,6 @@ class AppTestCase(unittest. TestCase):
         json = response.get_json()
         assert "timeline_posts" in json
         assert len(json["timeline_posts"]) == 0
-    
 
     def test_timeline_post_valid(self):
         post_data = {
