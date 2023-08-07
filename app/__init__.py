@@ -40,11 +40,11 @@ def index():
 
 @app.route("/hobbies")
 def hobbies():
-    return render_template('hobbies.html', url=os.getenv("URL"))
+    return render_template('hobbies.html', name = info['name'], url=os.getenv("URL"))
 
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', title="Timeline")
+    return render_template('timeline.html', title="Timeline", name = info['name'])
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
