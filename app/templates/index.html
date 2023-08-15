@@ -63,38 +63,54 @@
                     <h1 class="sub-title">About Me</h1>
                     <br>
                     <p>
-                        Hi there! I'm a student pursuing a Bachelor of Science in computer science at the <a href="https://www.udel.edu" target="_blank" style="color: #bdbdbd;">University of Delaware</a> with a focus in software engineering and artificial intelligence.
+                        Hi there! I'm an honors computer science student at the <a href="https://www.udel.edu" target="_blank" style="color: #bdbdbd;">University of Delaware</a>.
                         <br class="about-br">
                         I love to explore the endless world of possibilties unlocked through computer science and look forward to making meaningful impacts through programming.
                         <br class="about-br">
-                        Currently I'm especially interested in software engineering and I have gained a broad range of valuable technical experience.
+                        Currently, I'm especially interested in software engineering and I have gained a broad range of valuable technical experience.
                     </p>
                     
                     <!--We can change these tabs to be other categories, like fun facts, coursework, etc-->
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links active-link" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')"><i class="fa-solid fa-trophy"></i> Achievements</p>
+                        <p class="tab-links" onclick="opentab('skills')"><i class="fa-solid fa-bolt"></i> Skills</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>Skill 1</span> <br> Description for Skill 1</li>
-                            <li><span>Skill 2</span> <br> Description for Skill 2</li>
-                            <li><span>Skill 3</span> <br> Description for Skill 3</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021 - 2025</span> <br> University of Delaware</li>
-                            <li><span>2017 - 2021</span> <br> Conrad Schools of Science</li>
+                            <div class="education-content">
+                                <img src="../static/img/UD-logo.png" alt="University of Delaware Logo" style="height:85px">
+                                <li>
+                                    <h2>University of Delaware</h2>
+                                    <span>2021 - 2025</span><br>
+                                    <div style="color: white">Honors B.S. Computer Science</div>
+                                    <p>Focus: Software Engineering & Artificial Intelligence</p>
+                                </li>
+                            </div>
+                            <div class="education-content">
+                                <img src="../static/img/conrad-logo.png" alt="Conrad Schools of Science Logo" style="height:85px">
+                                <li>
+                                    <h2>Conrad Schools of Science</h2>
+                                    <span>2017 - 2021</span><br>
+                                    <div style="color: white">High School Diploma</div>
+                                    <p>Career Pathway: Computer Science</p>
+                                </li>
+                            </div>
                         </ul>
                     </div>
                     <div class="tab-contents" id="achievements">
                         <ul>
-                            <li><span>2021 - Current</span> <br> B. Bradford Barnes Memorial Scholarship Recipient</li>
-                            <li><span>2019 - 2021</span> <br> Description for Achievement 2</li>
-                            <li><span>2017 - 2018</span> <br> Description for Achievement 3</li>
-                            <li><span>2015 - 2017</span> <br> Description for Achievement 4</li>
+                            <li><span>2021 - Current</span> <br> B. Bradford Barnes Memorial Scholarship (Full Scholarship)</li>
+                            <li><span>2021 - Current</span> <br> University of Delaware Trustee Scholarship</li>
+                            <li><span>2021</span> <br> Edward Malin Memorial Scholarship</li>
+                            <li><span>2016 - 2020</span> <br> Carson Scholarship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Skill 1</span> <br> Description for Skill 1</li>
+                            <li><span>Skill 2</span> <br> Description for Skill 2</li>
+                            <li><span>Skill 3</span> <br> Description for Skill 3</li>
                         </ul>
                     </div>
                 </div>
@@ -175,58 +191,120 @@
     </div>
 
     <!-----------Projects----------->
-    <!--Change the github repository links to your project repo links-->
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="projects-list container swiper-container">
                 <div class="swiper-wrapper">
                     <div class="project-content swiper-slide">
-                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+                        <img src="../static/img/PlanetGarden.png" alt="Planet Garden Image" class="project-img">
 
                         <div class="project-data">
                             <h3 class="project-title">Planet Garden</h3>
+                            <div class="project-skills"><b>Skills:</b> React Typescript, HTML, CSS, GitHub</div>
                             <p class="project-description">
-                                A shopping website made in an Agile team of 5 with React Typescript, HTML, and CSS that has 3 levels of permission: users can shop for products and make changes to their carts, the CEO can manage the various products available and users of the website, and the admin can make edits to existing products.
+                                A shopping website made in an Agile team of 5 that has 3 levels of permission: the Users can shop for products and make changes to their carts, the CEO can manage the various products available and users of the website, and the Admin can make edits to existing products.
                             </p>
-                            <a href="#" class="button button--flex button--small project-button">
+                            <a href="https://aparnaroy.github.io/Team15-PlanetGarden/" target="_blank" class="button button--flex button--small project-button">
                                 Demo
                                 <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                            <a href="https://github.com/aparnaroy/Team15-PlanetGarden" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="project-content swiper-slide">
-                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+                        <img src="../static/img/GoLocal.png" alt="Go Local Image" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">Go Local</h3>
+                            <div class="project-skills"><b>Skills:</b> React Typescript, HTML, CSS, BotPress, GitHub</div>
+                            <p class="project-description">
+                                A website submitted as a hack during the HenHacks hackathon. Facilitates communication between small Delaware businesses and their communities, promoting a culture of belonging and encouraging the sharing of businesses in an inclusive platform. Includes a chatbot to assist users with website navigation.
+                            </p>
+                            <a href="https://aparnaroy.github.io/GoLocal-HenHacks/" target="_blank" class="button button--flex button--small project-button">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                            <a href="https://github.com/aparnaroy/GoLocal-HenHacks" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content swiper-slide">
+                        <img src="../static/img/Munch-ease.png" alt="Munch-ease Image" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">Munch-ease</h3>
+                            <div class="project-skills"><b>Skills:</b> Java, GitHub</div>
+                            <p class="project-description">
+                                A web application created as a hack during Technica. Allows users to plan their meals and creates a cumulative grocery list for the week, helping users budget better when grocery shopping.
+                            </p>
+                            <a href="https://github.com/aparnaroy/Munch-ease" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content swiper-slide">
+                        <img src="../static/img/BinaryClock.png" alt="Binary Clock Image" class="project-img">
 
                         <div class="project-data">
                             <h3 class="project-title">Binary Clock</h3>
+                            <div class="project-skills"><b>Skills:</b> C, Scripting, Unix, Command Line</div>
                             <p class="project-description">
-                                A C program that displays a clock with time values represented in binary on the Unix operating system using shell scripts. Toggles between 24-hour and 12-hour displays when given OS signals.
+                                A program that displays a clock with time values represented in binary on the Unix operating system using shell scripts. Toggles between 24-hour and 12-hour displays when given OS signals.
                             </p>
-                            <a href="#" class="button button--flex button--small project-button">
-                                Demo
-                                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            <a href="https://github.com/aparnaroy/Binary-Clock" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="project-content swiper-slide">
-                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+                        <img src="../static/img/ChessBattle.png" alt="Chess Battle Image" class="project-img">
 
                         <div class="project-data">
                             <h3 class="project-title">Chess Battle</h3>
+                            <div class="project-skills"><b>Skills:</b> Java, IntelliJ</div>
                             <p class="project-description">
-                                A Java-based chess-like board game that utilizes major concepts of object-oriented programming. Consists of 5 types of actions and 6 different game pieces which each have individual attributes.
+                                A chess-like board game that utilizes major concepts of object-oriented programming. Consists of 5 types of actions and 6 different game pieces which each have individual attributes.
                             </p>
-                            <a href="#" class="button button--flex button--small project-button">
+                            <a href="https://github.com/aparnaroy/Chess-Battle" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content swiper-slide">
+                        <img src="../static/img/UProductivity.png" alt="UProductivity Image" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">UProductivity</h3>
+                            <div class="project-skills"><b>Skills:</b> Python, Anvil</div>
+                            <p class="project-description">
+                                A web application with an interactive user interface that helps college students create 4-year plans based on their majors, accounting for various requirements.
+                            </p>
+                            <a href="https://b3qqasd6zugq5dbr.anvil.app/IWM5XPRVFHD4PZ5NTKQST6AR" target="_blank" class="button button--flex button--small project-button">
                                 Demo
                                 <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                            <a href="https://github.com/aparnaroy/UProductivity" target="_blank" class="button button--flex button--small project-button">
+                                GitHub
+                                <i class="fa-brands fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
+                <!-- Arrows & Pagination -->
                 <div class="swiper-button-next">
                     <i class="fa-solid fa-chevron-right swiper-project-icon"></i>
                 </div>
