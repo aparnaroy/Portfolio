@@ -8,6 +8,9 @@
     <meta property="og:description" content="My Personal Portfolio">
     <meta property="og:url" content="{{ url }}">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../static/styles/swiper-bundle.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -39,7 +42,7 @@
 
             <div class="header-text">
                 <div class="text-content">
-                    <p>Software Developer</p>
+                    <p>Honors Computer Science Student</p>
                     <h1>Hi, I'm <span>{{ name }}</span> <br> from {{ location }}</h1>
                 </div>
                 <div class="image-container">
@@ -58,7 +61,14 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>This is text about me! Lorem and ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <p>
+                        Hi there! I'm a student pursuing a Bachelor of Science in computer science at the <a href="https://www.udel.edu" target="_blank" style="color: #bdbdbd;">University of Delaware</a> with a focus in software engineering and artificial intelligence.
+                        <br class="about-br">
+                        I love to explore the endless world of possibilties unlocked through computer science and look forward to making meaningful impacts through programming.
+                        <br class="about-br">
+                        Currently I'm especially interested in software engineering and I have gained a broad range of valuable technical experience.
+                    </p>
                     
                     <!--We can change these tabs to be other categories, like fun facts, coursework, etc-->
                     <div class="tab-titles">
@@ -100,49 +110,51 @@
             <div class="divider">
                 <div class="col">
                     <div style="padding-top: 50px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Experience 1</h2>
-                        <p style="color: #e8e7e7;">
-                        Lorem an ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat atar.
+                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Production Engineering Fellow</h2>
+                        <p style="color: #e8e7e7; font-size: 17px;">
+                            Develop dynamic projects to gain the practical skills needed to efficiently build and manage a production infrastructure, including experience with Docker, Kubernetes, and scripting.
                         </p>
                     </div>
                     <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Experience 2</h2>
-                        <p style="color: #e8e7e7;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
+                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Computer Programming & Software Development Intern</h2>
+                        <p style="color: #e8e7e7; font-size: 17px;">
+                            Collaborate closely with the CEO and Chief Scientist to develop a first-in-class commercial software product for cell and gene therapy production, streamlining the process of delivering life-saving therapies to patients.
+                            <br>
+                            Create a functioning, user-friendly, and visually appealing graphical user interface for end-users.                            
                         </p>
                     </div>
                     <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Experience 3</h2>
-                        <p style="color: #e8e7e7;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
+                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Code Sensei</h2>
+                        <p style="color: #e8e7e7; font-size: 17px;">
+                            Deliver engaging and interactive coding sessions to children, focusing on JavaScript, game development, and other relevant technologies.
+                            <br>
+                            Create a positive and safe learning environment where students can develop their coding, math, logic, and problem-solving skills.
+                            <br>
+                            Provide feedback to parents on their child's progress and achievements during demos and sessions.
                         </p>
                     </div>
                     <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Experience 4</h2>
-                        <p style="color: #e8e7e7;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
+                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Sensify Lab Undergraduate Researcher</h2>
+                        <p style="color: #e8e7e7; font-size: 17px;">
+                            Develop procedural generation techniques and deep learning models to rapidly generate compelling and dynamic characters for game development using Python and C#.
+                        </p>
+                    </div>
+                    <div style="padding-top: 40px">
+                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Undergraduate Research Intern</h2>
+                        <p style="color: #e8e7e7; font-size: 17px;">
+                            Created an automated testing tool for domain-specific chatbots to refine and augment the training set using semantic clustering and a paraphrasing model to enhance the chatbot’s ability to correctly classify intents.
+                            <br>
+                            Wrote and manipulated Python code to test natural-language understanding models.
                         </p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="sticky-helper">
-                        <div class="card">
+                        <div class="info-card">
                             <p style="padding-bottom: 10px">
                                 More detailed info about my experience!
                             </p>
-                            <a class="button button-block" href="/">
+                            <a class="button button-block" href="https://drive.google.com/file/d/1bFmOUWTwtcU03xe8QMQi9HkZiQbTaOHT/view?usp=sharing" target="_blank">
                                 <span class="fa fa-file-alt"></span> Resumé
                             </a>
                             <a class="button button-block" href="https://www.linkedin.com/in/aparna-roy1/" target="_blank">
@@ -153,7 +165,7 @@
                             </a>
                             <p>
                                 If you want to know more, email me at
-                                <a href="/" style="color: #4dc4d6; text-decoration: none">aparnar@udel.edu</a>
+                                <a href="mailto:aparnar@udel.edu" style="color: #4dc4d6; text-decoration: none">aparnar@udel.edu</a>
                             </p>
                         </div>
                     </div>
@@ -167,24 +179,89 @@
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
-            <div class="projects-list">
+            <div class="projects-list container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="project-content swiper-slide">
+                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">Planet Garden</h3>
+                            <p class="project-description">
+                                A shopping website made in an Agile team of 5 with React Typescript, HTML, and CSS that has 3 levels of permission: users can shop for products and make changes to their carts, the CEO can manage the various products available and users of the website, and the admin can make edits to existing products.
+                            </p>
+                            <a href="#" class="button button--flex button--small project-button">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content swiper-slide">
+                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">Binary Clock</h3>
+                            <p class="project-description">
+                                A C program that displays a clock with time values represented in binary on the Unix operating system using shell scripts. Toggles between 24-hour and 12-hour displays when given OS signals.
+                            </p>
+                            <a href="#" class="button button--flex button--small project-button">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content swiper-slide">
+                        <img src="./static/img/headshot2.jpg" alt="" class="project-img">
+
+                        <div class="project-data">
+                            <h3 class="project-title">Chess Battle</h3>
+                            <p class="project-description">
+                                A Java-based chess-like board game that utilizes major concepts of object-oriented programming. Consists of 5 types of actions and 6 different game pieces which each have individual attributes.
+                            </p>
+                            <a href="#" class="button button--flex button--small project-button">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-chevron-right swiper-project-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa-solid fa-chevron-left swiper-project-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--<iframe src="{{ url_for('bootstrap_content') }}" width="100%" height="500" frameborder="0"></iframe>-->
+
+    <!-----------Interests----------->
+    <div id="interests">
+        <div class="container">
+            <h1 class="sub-title">My Interests</h1>
+            <div class="interests-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <h2>Software Engineering</h2>
+                    <p>I love software engineering.</p>
+                    <a href="https://github.com/aparnaroy/Team15-PlanetGarden" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Project 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <h2>Artificial Intelligence</h2>
+                    <p>AI is the talk of the town now, isn't it!</p>
+                    <a href="https://github.com/aparnaroy/Binary-Clock" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Project 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <h2>Web Development</h2>
+                    <p>So fun!</p>
+                    <a href="https://github.com/aparnaroy/Chess-Battle" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
                 </div>
             </div>
         </div>
@@ -196,8 +273,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-envelope"></i> work.email@gmail.com</p>
-                    <p><i class="fas fa-paper-plane"></i> personal.email@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:aparnar@udel.edu" style="color: white; text-decoration: none">aparnar@udel.edu</a></p>
+                    <p><i class="fas fa-paper-plane"></i> <a href="mailto:aparnar@udel.edu" style="color: white; text-decoration: none">deviroy2@gmail.com</a></p>
                     <div class="social-icons">
                         <!--<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>-->
@@ -270,6 +347,25 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+<!-- Swiper JS -->
+<script src="../static/swiper-bundle.min.js"></script>
+
+<script>
+    let swiper = new Swiper(".projects-list", {
+      cssMode: true,
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 </script>
 
 </body>

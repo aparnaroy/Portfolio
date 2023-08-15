@@ -38,6 +38,10 @@ mydb.create_tables([TimelinePost])
 def index():
     return render_template('index.html', title="MLH Fellow", name = info['name'], location = info['location'], url=os.getenv("URL"))
 
+@app.route('/bootstrap-content')
+def bootstrap_content():
+    return render_template('bootstrap-content.html')
+
 @app.route("/hobbies")
 def hobbies():
     return render_template('hobbies.html', name = info['name'], url=os.getenv("URL"))

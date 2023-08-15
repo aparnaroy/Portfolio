@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 
 #about {
     padding: 30px 0;
-    color: #ababab;
+    color: #bdbdbd;
 }
 
 .row {
@@ -135,6 +135,15 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+  font-size: 17px;
+  line-height: 1.6rem;
+}
+
+.about-br {
+  display: block;
+  margin-top: 0.6em;    /* Adjust the margin values to your liking */
+  margin-bottom: 0.6em; 
+  content: ' ';
 }
 
 .sub-title {
@@ -144,8 +153,9 @@ nav ul li a:hover::after {
 }
 
 .tab-titles {
+  color: #fff;
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 0 30px;
 }
 
 .tab-links {
@@ -206,7 +216,7 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
-.card {
+.info-card {
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 10px;
@@ -239,13 +249,14 @@ nav ul li a:hover::after {
         width: 100%;
     }
 
-    .card {
+    .info-card {
         margin-left: 0;
         margin-right: 0;
         border-radius: 10px;
         padding: 1.5rem 2rem 1.5rem 2rem;
       }
 }
+
 
 /*-----------Projects-----------*/
 
@@ -254,33 +265,139 @@ nav ul li a:hover::after {
 }
 
 .projects-list {
+  margin-top: 50px;
+  overflow: initial;
+}
+
+.project-content {
+  padding: 0 1.5rem;
+}
+
+.project-img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  margin-bottom: 15px;
+  line-height: 1.4rem;
+  color: #bdbdbd;
+}
+
+.project-button:hover .button-icon {
+  transform: translateX(0.4rem);
+}
+
+.project-button {
+  background-color: #4dc4d6 !important; 
+  margin-bottom: 1rem !important;
+}
+
+.project-button:hover,
+.project-button:focus,
+.project-button-selected {
+  transform: translateY(0px) !important;
+  background-color: #4ca5b3 !important;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-project-icon {
+  font-size: 2rem;
+  color: #4dc4d6;
+}
+
+.swiper-container-horizontal > swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #4dc4d6;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+/* Large screen */
+@media screen and (min-width: 960px) {
+  .project-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .project-img {
+    width: 320px;
+  }
+
+  .project-content {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    column-gap: 5rem;
+  }
+  
+  .swiper-button-prev {
+    left: 3rem;
+  }
+  
+  .swiper-button-next {
+    right: 3rem;
+  }
+}
+
+
+/*-----------Interests-----------*/
+
+#interests {
+  padding: 30px 0;
+}
+
+.interests-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
 
-.projects-list div {
+.interests-list div {
   background: #262626;
-  padding: 40px;
-  font-size: 13px;
+  padding: 35px;
+  line-height: 1.6rem;
+  font-size: 16px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
 }
 
-.projects-list div i {
+.interests-list div i {
   font-size: 50px;
   margin-bottom: 30px;
 }
 
-.projects-list div h2 {
+.interests-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-.projects-list div a {
+.interests-list div a {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -288,22 +405,23 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 
-.projects-list div a i {
+.interests-list div a i {
   font-size: 26px;
   margin-bottom: 0;
   margin-right: 5px;
 }
 
-.projects-list div a:hover {
+.interests-list div a:hover {
   color: #000000;
 }
 
-.projects-list div:hover {
+.interests-list div:hover {
   background: #4dc4d6;
   transform: translateY(-10px);
 }
 
-/*-----------Contact-----------*/
+
+/*-------rgb(0, 0, 0)tact-----------*/
 
 #contact {
     margin-top: 30px;
@@ -464,7 +582,7 @@ nav .fas {
     }
 
     .about-col-2 {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .tab-links {
@@ -697,3 +815,70 @@ nav .fas {
   font-size: 18px;
   color: #ababab;
 }
+
+
+/*-----------Projects Carousel-----------*/
+/*.carousel-container {
+  padding: 20px 10%;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 0 !important; 
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.card {
+  padding: 0 !important;
+  border: none !important;
+  margin: 0 0.5em;
+  border-radius: 0;
+  background-color: #262626;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card img {
+  height: 11em;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+.btn.btn-primary {
+  margin-bottom: 0;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+*/
