@@ -74,7 +74,7 @@
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
                         <p class="tab-links" onclick="opentab('achievements')"><i class="fa-solid fa-trophy"></i> Achievements</p>
-                        <p class="tab-links" onclick="opentab('skills')"><i class="fa-solid fa-bolt"></i> Skills</p>
+                        <p class="tab-links" onclick="opentab('funfacts')"><i class="fa-solid fa-bolt"></i> Fun Facts</p>
                     </div>
                     <div class="tab-contents active-tab" id="education">
                         <ul>
@@ -83,7 +83,7 @@
                                 <li>
                                     <h2>University of Delaware</h2>
                                     <span>2021 - 2025</span><br>
-                                    <div style="color: white">Honors B.S. Computer Science</div>
+                                    <div style="color: white;">Honors B.S. Computer Science</div>
                                     <p>Focus: Software Engineering & Artificial Intelligence</p>
                                 </li>
                             </div>
@@ -92,7 +92,7 @@
                                 <li>
                                     <h2>Conrad Schools of Science</h2>
                                     <span>2017 - 2021</span><br>
-                                    <div style="color: white">High School Diploma</div>
+                                    <div style="color: white;">High School Diploma</div>
                                     <p>Career Pathway: Computer Science</p>
                                 </li>
                             </div>
@@ -100,17 +100,18 @@
                     </div>
                     <div class="tab-contents" id="achievements">
                         <ul>
-                            <li><span>2021 - Current</span> <br> B. Bradford Barnes Memorial Scholarship (Full Scholarship)</li>
+                            <li><span>2021 - Current</span> <br> B. Bradford Barnes Memorial Scholarship (Full Ride)</li>
                             <li><span>2021 - Current</span> <br> University of Delaware Trustee Scholarship</li>
                             <li><span>2021</span> <br> Edward Malin Memorial Scholarship</li>
                             <li><span>2016 - 2020</span> <br> Carson Scholarship</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="skills">
+                    <div class="tab-contents" id="funfacts">
                         <ul>
-                            <li><span>Skill 1</span> <br> Description for Skill 1</li>
-                            <li><span>Skill 2</span> <br> Description for Skill 2</li>
-                            <li><span>Skill 3</span> <br> Description for Skill 3</li>
+                            <li><span style="font-size: 18px;">■</span> I've moved 7 times so far</li>
+                            <li><span style="font-size: 18px;">■</span> I started coding when I was in middle school</li>
+                            <li><span style="font-size: 18px;">■</span> I'm an only child and have never had any pets</li>
+                            <li><span style="font-size: 18px;">■</span> I've gone parasailing and can't wait to do it again</li>
                         </ul>
                     </div>
                 </div>
@@ -118,52 +119,99 @@
         </div>
     </div>
 
+    <!-----------Skills----------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-content">
+                <img src="../static/img/python.png" alt="Python">
+                <img src="../static/img/java.png" alt="Java">
+                <img src="../static/img/cplusplus.png" alt="C/C++">
+                <img src="../static/img/javascript.png" alt="JavaScript">
+                <img src="../static/img/html.png" alt="HTML">
+                <img src="../static/img/css.png" alt="CSS">
+                <img src="../static/img/react.png" alt="React">
+                <img src="../static/img/typescript.png" alt="TypeScript">
+                <img src="../static/img/assembly.png" alt="Assembly">
+                <img src="../static/img/scripting.png" alt="Bash-shell Script / Command Line">
+                <img src="../static/img/git.png" alt="Git">
+                <img src="../static/img/github.png" alt="GitHub">
+                <img src="../static/img/unity.png" alt="Unity">
+                <img src="../static/img/flask.png" alt="Flask">
+            </div>
+        </div>
+    </div>
+
     <!-----------Experience----------->
     <!-- link your resume, linkedin, github and add your email in the card-->
+    <!-- If you add an experience, add CSS code for its animation delay -->
     <div id="experience">
         <div class="container">
             <h1 class="sub-title">My Experience</h1>
             <div class="divider">
-                <div class="col">
-                    <div style="padding-top: 50px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Production Engineering Fellow</h2>
-                        <p style="color: #e8e7e7; font-size: 17px;">
-                            Develop dynamic projects to gain the practical skills needed to efficiently build and manage a production infrastructure, including experience with Docker, Kubernetes, and scripting.
-                        </p>
+                <div class="col experiences">
+                    <div class="experience-content" style="padding-top: 50px;">
+                        <img src="../static/img/mlh-logo.png" alt="">
+                        <div class="text-block">
+                            <h2>Production Engineering Fellow</h2>
+                            <h3>Major League Hacking</h3>
+                            <p>June 2023 - Present</p>
+                            <ul>
+                                <li>Develop dynamic projects to gain the practical skills needed to efficiently build and manage a production infrastructure.</li>
+                                <li>Gain experience with Docker, Kubernetes, and scripting.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Computer Programming & Software Development Intern</h2>
-                        <p style="color: #e8e7e7; font-size: 17px;">
-                            Collaborate closely with the CEO and Chief Scientist to develop a first-in-class commercial software product for cell and gene therapy production, streamlining the process of delivering life-saving therapies to patients.
-                            <br>
-                            Create a functioning, user-friendly, and visually appealing graphical user interface for end-users.                            
-                        </p>
+                    <div class="experience-content">
+                        <img src="../static/img/biocurie-logo.png" alt="">
+                        <div class="text-block">
+                            <h2>Computer Programming & Software Development Intern</h2>
+                            <h3>BioCurie, Inc.</h3>
+                            <p>March 2023 - Present</p>
+                            <ul>
+                                <li>Collaborate closely with the CEO and Chief Scientist to develop a first-in-class commercial software product for cell and gene therapy production, streamlining the process of delivering life-saving therapies to patients.</li>
+                                <li>Create a functioning, user-friendly, and visually appealing graphical user interface for end-users.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Code Sensei</h2>
-                        <p style="color: #e8e7e7; font-size: 17px;">
-                            Deliver engaging and interactive coding sessions to children, focusing on JavaScript, game development, and other relevant technologies.
-                            <br>
-                            Create a positive and safe learning environment where students can develop their coding, math, logic, and problem-solving skills.
-                            <br>
-                            Provide feedback to parents on their child's progress and achievements during demos and sessions.
-                        </p>
+                    <div class="experience-content">
+                        <img src="../static/img/codeninjas-logo.png" alt="">
+                        <div class="text-block">
+                            <h2>Code Sensei/Tutor</h2>
+                            <h3>Code Ninjas</h3>
+                            <p>June 2023 - Present</p>
+                            <ul>
+                                <li>Deliver engaging and interactive coding sessions to children, focusing on JavaScript, game development, and other relevant technologies.</li>
+                                <li>Create a positive and safe learning environment where students can develop their coding, math, logic, and problem-solving skills.</li>
+                                <li>Provide feedback to parents on their child's progress and achievements during demos and sessions.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Sensify Lab Undergraduate Researcher</h2>
-                        <p style="color: #e8e7e7; font-size: 17px;">
-                            Develop procedural generation techniques and deep learning models to rapidly generate compelling and dynamic characters for game development using Python and C#.
-                        </p>
+                    <div class="experience-content">
+                        <img src="../static/img/udelsensify-logo.png" alt="">
+                        <div class="text-block">
+                            <h2>Sensify Lab Undergraduate Researcher</h2>
+                            <h3>Sensify Lab | University of Delaware</h3>
+                            <p> January 2023 - May 2023</p>
+                            <ul>
+                                <li>Develop procedural generation techniques and deep learning models to rapidly generate compelling and dynamic characters for game development using Python and C#.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style="padding-top: 40px">
-                        <h2 style="color: #4dc4d6; padding-bottom: 10px">Undergraduate Research Intern</h2>
-                        <p style="color: #e8e7e7; font-size: 17px;">
-                            Created an automated testing tool for domain-specific chatbots to refine and augment the training set using semantic clustering and a paraphrasing model to enhance the chatbot’s ability to correctly classify intents.
-                            <br>
-                            Wrote and manipulated Python code to test natural-language understanding models.
-                        </p>
+                    <div class="experience-content">
+                        <img src="../static/img/vcu-logo.png" alt="">
+                        <div class="text-block">
+                            <h2>Undergraduate Research Intern</h2>
+                            <h3>Virginia Commonwealth University</h3>
+                            <p>May 2022 - August 2022</p>
+                            <ul>
+                                <li>Created an automated testing tool for domain-specific chatbots to refine and augment the training set using semantic clustering and a paraphrasing model to enhance the chatbot’s ability to correctly classify intents.</li>
+                                <li>Wrote and manipulated Python code to test natural-language understanding models.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="sticky-helper">
                         <div class="info-card">
@@ -316,7 +364,6 @@
         </div>
     </div>
 
-    <!--<iframe src="{{ url_for('bootstrap_content') }}" width="100%" height="500" frameborder="0"></iframe>-->
 
     <!-----------Interests----------->
     <div id="interests">
@@ -326,20 +373,17 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Software Engineering</h2>
-                    <p>I love software engineering.</p>
-                    <a href="https://github.com/aparnaroy/Team15-PlanetGarden" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <p>I love SWE because it combines logical problem-solving with creative innovation, allowing me to craft solutions that improve everyday lives.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop-simple"></i>
+                    <i class="fa-solid fa-microchip"></i>
                     <h2>Artificial Intelligence</h2>
-                    <p>AI is the talk of the town now, isn't it!</p>
-                    <a href="https://github.com/aparnaroy/Binary-Clock" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <p>I'm fascinated by AI because it unlocks vast possibilities. I am especially interested in in the evolving realm of human-computer interactions.</p>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
+                    <i class="fa-solid fa-desktop"></i>
                     <h2>Web Development</h2>
-                    <p>So fun!</p>
-                    <a href="https://github.com/aparnaroy/Chess-Battle" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                    <p>Web development is empowering as it offers a direct avenue to connect with and impact the end-user, translating code into tangible experiences.</p>
                 </div>
             </div>
         </div>
