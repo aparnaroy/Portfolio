@@ -215,6 +215,13 @@ nav ul li a:hover::after {
   column-gap: 1rem;
 }
 
+.education-content:hover {
+  background-color: #262626;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+
 
 /*-----------Experience-----------*/
 
@@ -657,12 +664,16 @@ nav .fas {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #4dc4d6;
   margin: 0 auto;
 }
 
 .card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#blog {
+  margin-bottom: 40px;
 }
 
 .blog-wrapper {
@@ -671,7 +682,7 @@ nav .fas {
   margin-bottom: 0;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .card-blog {
     margin-bottom: 30px;
   }
@@ -693,15 +704,14 @@ nav .fas {
 
 .card-blog .card-category {
   display: inline-block;
-  color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #127cf5;
+  background-color: #4dc4d6;
   border-radius: 4px;
 }
 
 .card-blog .card-category .category {
-  color: #fff;
+  color: #000000;
   display: inline-block;
   text-transform: uppercase;
   font-size: 0.7rem;
@@ -719,12 +729,14 @@ nav .fas {
 }
 
 .card-blog {
-  display: inline-block;
-}
-
-.card-blog {
   color: #4e4e4e;
   display: inline-block;
+  border: none !important;
+}
+
+.card-blog .card-img img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .blog-wrapper {
@@ -742,7 +754,7 @@ nav .fas {
 }
 
 .blog-wrapper {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid #4dc4d6;
   margin-top: 1rem;
 }
 
@@ -752,7 +764,7 @@ nav .fas {
 }
 
 .blog-wrapper {
-  color: #0078ff;
+  color: #4dc4d6;
 }
 
 .blog-wrapper {
@@ -760,7 +772,7 @@ nav .fas {
 }
 
 .blog-wrapper {
-    border-left: 4px solid #0078ff;
+    border-left: 4px solid #4dc4d6;
     padding: 18px;
     font-style: italic;
 }
@@ -768,8 +780,8 @@ nav .fas {
 /*-----------Map-----------*/
 
 #map { 
-    height: 500px; 
-    width: 75%;
+    height: 600px; 
+    width: 85%;
     margin: auto;
 }
 
