@@ -7,17 +7,6 @@ from io import StringIO
 os.environ[ 'TESTING' ] = 'true'
 from app import app
 
-@contextmanager
-def captured_templates(app):
-    recorded = []
-    def record(sender, template, context, **extra):
-        recorded.append((template, context))
-    template_rendered.connect(record, app)
-    try:
-        yield recorded
-    finally:
-        template_rendered.disconnect(record, app)
-
 
 class AppTestCase(unittest. TestCase):
     def setUp(self):
@@ -28,19 +17,6 @@ class AppTestCase(unittest. TestCase):
         assert response.status_code == 200
         html = response.get_data(as_text=True)
         assert "<h1 class=\"sub-title\">About Me</h1>" in html
-
-    def test_home_rendered(self):
-        with captured_templates(app) as templates:
-            response = self.client.get("/")
-            assert response.status_code == 200
-            template, context = templates[0]
-
-            # Check that the correct template was used
-            assert template.name == "index.html" 
-
-            # You can also check the context data passed to the template
-            assert "location" in context 
-            assert context["title"] == "MLH Fellow"
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")

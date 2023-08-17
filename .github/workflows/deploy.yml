@@ -19,7 +19,7 @@ jobs:
           cat >> ~/.ssh/config <<END
           Host my-vps
             HostName $SSH_IP
-            User $SSH_USER
+            User $SSH-USER
             IdentityFile ~/.ssh/deploy-key.pem
             StrictHostKeyChecking no
           END
