@@ -11,6 +11,7 @@ This project showcases the range of technologies I mastered during the MLH fello
 - Deploying a Flask website on a virtual private server (VPS) via a Digital Ocean droplet with CentosOS (Linux)
 - Leveraging Jinja for dynamic HTML page rendering and both Bootstrap and custom CSS for mobile-responsive design
 - Implementing Flask app routing for the various pages of the website
+- Utilizing JavaScript to connect the website's Contact Form to Google Sheets
 - Harnessing MySQL to post and get/retrieve timeline entries
 - Establishing a CI/CD pipeline using Bash scripts, Docker containers, and GitHub Actions for automated testing and deployment on the VPS
 - Securing the website with HTTPS certification using NGINX
