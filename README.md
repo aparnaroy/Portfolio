@@ -6,17 +6,25 @@ This project showcases the range of technologies I mastered during the MLH fello
 
 ## Visit My Portfolio: https://aparna.duckdns.org/
 
-## Features
+## Technical Overview
 
-- Deploying a Flask website on a virtual private server (VPS) via a Digital Ocean droplet with CentosOS (Linux)
-- Leveraging Jinja for dynamic HTML page rendering and both Bootstrap and custom CSS for mobile-responsive design
-- Implementing Flask app routing for the various pages of the website
-- Utilizing JavaScript to connect the website's Contact Form to Google Sheets
-- Harnessing MySQL to post and get/retrieve timeline entries
-- Establishing a CI/CD pipeline using Bash scripts, Docker containers, and GitHub Actions for automated testing and deployment on the VPS
-- Securing the website with HTTPS certification using NGINX
-- Containerizing the infrastructure using Docker and Docker Compose comprising 3 containers: myportfolio, mysql, and nginx
-- Automating unit testing and integration testing on API endpoints and the MySQL database on pushes or pull requests to the main branch
+- Deployed a Flask website on a virtual private server (VPS) via a Digital Ocean droplet with CentosOS (Linux)
+- Leveraged Jinja for dynamic HTML page rendering and both Bootstrap and custom CSS for mobile-responsive design
+- Implemented Flask app routing for the various pages of the website
+- Utilized JavaScript to connect the website's Contact Form to Google Sheets
+- Harnessed MySQL to post and get/retrieve timeline entries
+- Established a CI/CD pipeline using Bash scripts, Docker containers, and GitHub Actions for automated testing and deployment on the VPS
+- Secured the website with HTTPS certification using NGINX
+- Containerized the infrastructure using Docker and Docker Compose comprising 3 containers: myportfolio, mysql, and nginx
+- Automated unit testing and integration testing on API endpoints and the MySQL database on pushes or pull requests to the main branch
+
+## Coming Soon!
+
+- Animation on scroll
+- Redesigned Timeline page
+- Light/Dark mode toggle
+- Description of each skill on hover in Skills section
+- Personal logo
 
 ## Installation
 
