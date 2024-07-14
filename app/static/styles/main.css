@@ -328,6 +328,9 @@ nav ul li a:hover::after {
 .experience-content:nth-child(5) {
   animation-delay: 4s;
 }
+.experience-content:nth-child(6) {
+  animation-delay: 5s;
+}
 
 .experience-content img {
   width: 58px;
