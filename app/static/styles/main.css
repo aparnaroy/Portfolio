@@ -242,13 +242,44 @@ nav ul li a:hover::after {
 
 .skills-content img {
   height: 70px;
-  margin-bottom: 30px;
   transition: transform 0.5s;
 }
 
 .skills-content img:hover {
   transition: transform 0.5s;
+  transform: translateY(-8px);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+}
+
+.skill-item img {
+  height: 70px;
+  transition: transform 0.5s;
+}
+
+.skill-item:hover {
+  transition: transform 0.5s;
   transform: translateY(-10px);
+}
+
+.skill-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #efefef;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .skill-item p {
+    margin-top: -20px;
+    font-size: 13.5px;
+  }
 }
 
 
@@ -492,6 +523,11 @@ nav ul li a:hover::after {
 .swiper-project-icon {
   font-size: 2rem;
   color: #4dc4d6;
+}
+
+.swiper-project-icon:hover {
+  font-size: 39px;
+  color: #ffffff;
 }
 
 .swiper-container-horizontal > swiper-pagination-bullets {
@@ -1041,6 +1077,7 @@ nav .fas {
 .button-block {
   display: block;
   margin-bottom: 1em;
+  transition: transform 0.5s;
 }
 
 @media only screen and (max-width: 900px) {
